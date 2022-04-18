@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <title>RF Checkout | RodanAndFields® | Dermatologist</title>
     <style>
-        
+        *{
+            font-family: ProximaNovaRegular,Arial,Sans-Serif;
+        }
+        .logo{
+            display: flex;
+            justify-content:center;
+            padding: 20px;
+        }
         #contact{
             display: flex;
             flex-direction: column;
@@ -16,14 +24,26 @@
             width: 40%;
             margin: auto;
         }
-        hr{
+        .bar{
             width: 40%;
         }
         h2{
             text-align: center;
             font-weight: lighter;
         }
-        form {
+        form{
+            margin-bottom: 40px;
+        }
+        .ship{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            justify-content: space-between;
+            width: 40%;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .payment {
             display: flex;
             flex-direction: column;
             padding: 20px;
@@ -46,6 +66,22 @@
             display: flex;
             justify-content: space-between;
         }
+        .flx{
+            display: flex;
+        }
+        .pay {
+            text-align: center;
+        }
+        .footer{
+            text-align: center;
+            padding-bottom: 100px;
+        }
+        .one{
+            font-size:15px;
+        }
+        .two{
+            font-size: 12px;
+        }
         @media screen and (max-width: 600px) {
             .name{
                 display: grid;
@@ -57,6 +93,13 @@
     </style>
 </head>
 <body>
+    <div class="logo">
+        <a href="index.html"><img
+          src="https://www.rodanandfields.com/en-us/medias/rf-logo.svg?context=bWFzdGVyfGltYWdlc3w3MzczfGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2g2MC9oYWIvODgyMjE0NzE4NjcxOC5zdmd8YjNmMmU2YTg5MTM0NTMzM2Y2ODg2ZmRkZTJhNmY2OWZhYmYyYjk5NWQxODkxODFiYjVkY2MxY2NjOWRlMzA5OA"
+          alt=""
+        /></a>
+      </div>
+      <hr>
     <div id="contact">
         <h2>Contact</h2>
         <div>
@@ -65,48 +108,72 @@
         </div>
         
     </div>
-    <hr>
+    <hr class="bar">
     <div id="shopping">
-        <h2>Shoping</h2>
-        <hr>
+        <h2>Shipping</h2>
+        <hr class="bar">
         <form>
-            <div class="name">
-                <div ><label for="">First Name</label><br>
-                    <input type="text"style="width: 90%;"/></div>
-                <div style="width: 40%;" class="ls"><label for="">Last Name</label><br>
-                     <input type="text"style="width: 90%;"></div>
-            </div>
-                <label style="margin-top: 40px;">Address</label>
-                <input type="text">         
-                <label style="margin-top: 40px;">Address2</label>
-                <input type="text" style="margin-bottom: 40px;">
-            
-            <div class="place">
-                <div>
-                <label for="">City</label><br>
-                <input type='text'style="width: 50%;" />
-            </div>
-                <div>
-                    <label for="">State</label><br>
-                    <select style="padding: 10px;width: 70%;">
-                        <option>Arunachal Pradesh</option>
-                        <option>Maharastra</option>
-                        <option>Gujrat</option>
-                        <option>Assam</option>
-                        <option>Bihar</option>
-                        <option>other</option>
-                    </select>
+            <div class="ship">
+                <div class="name">
+                    <div ><label for="">First Name</label><br>
+                        <input type="text"style="width: 90%;"/></div>
+                    <div style="width: 40%;" class="ls"><label for="">Last Name</label><br>
+                         <input type="text"style="width: 90%;"></div>
                 </div>
-                <div>
-                    <label for="">Zipcode</label><br>
-                    <input type='number' style="width: 50%;" />
+                    <label style="margin-top: 40px;">Address</label>
+                    <input type="text">         
+                    <label style="margin-top: 40px;">Address2</label>
+                    <input type="text" style="margin-bottom: 40px;">
+                
+                <div class="place">
+                    <div>
+                    <label for="">City</label><br>
+                    <input type='text'style="width: 50%;" />
                 </div>
+                    <div>
+                        <label for="">State</label><br>
+                        <select style="padding: 10px;width: 70%;">
+                            <option>Arunachal Pradesh</option>
+                            <option>Maharastra</option>
+                            <option>Gujrat</option>
+                            <option>Assam</option>
+                            <option>Bihar</option>
+                            <option>other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Zipcode</label><br>
+                        <input type='number' style="width: 50%;" />
+                    </div>
+                </div>
+                <label style="margin-top: 40px;">Phone Number</label>
+                <input type="number"  style="margin-bottom: 40px;"/>
             </div>
-            <label style="margin-top: 40px;">Phone Number</label>
-            <input type="number"  style="margin-bottom: 40px;"/>
-            <input type="submit" value="Payment" onclick="PaymentFn()">
-
+            <h2>Payment</h2>
+            <hr class="bar">
+            <div class="payment">
+                <div><label for="">Name on credit card</label><br>
+                    <input type="name" placeholder="" style="width: 97%; margin-bottom: 20px;">
+                </div>
+                <div><label for="">Credit card Number</label><br>
+                    <input type="number" placeholder="" style="width: 97%; margin-bottom: 20px">
+                </div>
+                <div class="flx">
+                    <div><label for="">Expiration</label><br>
+                        <input type="number" placeholder="" style="width: 45%; margin-bottom: 20px"></div>
+                    <div><label for="">CVV</label><br>
+                        <input type="number" placeholder="" style="width: 45%; margin-bottom: 20px"></div>
+                    <div><label for="">OTP</label><br>
+                        <input type="number" placeholder="" style="width: 45%; margin-bottom: 20px"></div>
+                </div>
+                <input type="submit" value="Make Payment" class="pay" onclick="PaymentFn()">
+            </div>
         </form>
+    </div>
+    <hr>
+    <div class="footer">
+        <div class="one"><p>Privacy Policy &nbsp; | &nbsp; Product + Help Center &nbsp; | &nbsp; Shipping</p></div>
+        <div class="two"><p>© 2022 Rodan & Fields</p></div>
     </div>
 </body>
 <script>

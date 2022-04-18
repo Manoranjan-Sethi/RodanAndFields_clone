@@ -1,3 +1,63 @@
+.top {
+    background-color: #f7f4f2;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    font-family: ProximaNovaRegular, Arial, Sans-Serif;
+    font-size: 12px;
+}
+
+.top>b {
+    cursor: pointer;
+}
+
+.navbar-outer {
+    display: flex;
+
+}
+
+.navbar-outer>div {
+    width: 100%;
+    /* border: 1px solid #000; */
+
+}
+
+.navbar-outer>div:nth-child(1) {
+    text-align: left;
+}
+
+.navbar-outer>div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-outer>div:nth-child(3) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#navigation {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+}
+
+#navigation>div {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navigation>div>a {
+    text-decoration: none;
+    color: #000;
+}
+
+
 #head {
     margin-top: 30px;
     font-weight: bold;
@@ -23,6 +83,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
     gap: 50px;
+    margin-bottom: 50px;
 
 }
 
@@ -39,8 +100,13 @@
     cursor: pointer;
 }
 
+
 #checkout>div>button {
 margin-top: 15px;
+
+#container>div>button {
+    margin-top: 15px;
+
     padding: 9px 120px 9px 120px;
     background-color: white;
     border: 0.5px solid black;
@@ -58,6 +124,43 @@ button:hover {
     color: black;
     margin-bottom: 30px;
 }
+
+ 
+.footer{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+      
+  }
+.footer a{
+    color: black;
+  }
+
+  /* remove this in media queries */
+  .About_and_help{
+    display: flex;
+    /* border: 1px solid blue; */
+    justify-content: flex-start;
+    gap: 100px;
+ }
+.About_and_help>div>p {
+    font-size: 12px;
+}
+
+.fa {
+    font-size: 20px;
+    width:60px;
+   
+  }
+
+  .socials{
+    width:40%;
+  }
+  
+ .socials>p{
+    font-size: 20px;
+ }
 
 @media all and (min-width:450px) and (max-width:750px) {
     #checkout {
@@ -102,81 +205,18 @@ button:hover {
         text-align: center;
     }
 
+
     #head {
         text-align: center;
     }
-    #checkout>div>button{
+
+/*     #checkout>div>button{ */
+
+
+    #container>div>button {
+
         display: flex;
         justify-content: center;
-        padding: -5px -20px ;
+        padding: -5px -20px;
     }
-}
 
-/* 
-.item1 {
-
-    background-color: white;
-    margin: auto;
-
-
-
-}
-
-#price {
-    text-align: center;
-    color: grey;
-    padding-top: 30px;
-
-}
-
-#pro_name {
-    text-align: center;
-}
-
-.butt {
-    height: 50px;
-    width: 100%;
-    justify-content: center;
-}
-
-.butt4 {
-    height: 50px;
-    width: 340px;
-}
-
-.butt>p {
-    text-align: center;
-    font-size: large;
-    padding: 20px;
-}
-
-.image4 {
-    height: 340px;
-    width: 283.3px;
-    margin: auto;
-}
-
-
-.image {
-    height: 340px;
-    width: 340px;
-}
-
-@media all and (min-width:451px) and (max-width:850px) {
-    .parent {
-
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, auto);
-    }
-}
-
-@media all and (min-width:51px) and (max-width:450px) {
-    .parent {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(12, auto);
-    }
-} */
-/* 
-.parent > div{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
-} */
