@@ -109,7 +109,7 @@ var bestsellersData = [
 
 
 var cartData ;
-   if(JSON.parse(localStorage.getItem('cartData'))==null){
+   if(localStorage.getItem("cartData")==null){
       cartData = [];
    }else{
       cartData = JSON.parse(localStorage.getItem('cartData'))
@@ -118,7 +118,7 @@ var cartData ;
    bestsellersData.forEach(function (bestsellerData) {
 
       var box = document.createElement('div');
-      box.setAttribute('class','box')
+
       var img = document.createElement('img');
       img.src = bestsellerData.image_url;
 
@@ -136,12 +136,12 @@ var cartData ;
 
       button.addEventListener('click', function () {
          addtoCart(bestsellerData)
-       alert('Product Added')
+
       });
 
       box.append(img, name, price, button);
 
-      document.querySelector('#checkout').append(box)
+      document.querySelector('#container').append(box)
 
    });
    
@@ -149,4 +149,5 @@ var cartData ;
       cartData.push(product);
       console.log(cartData);
       localStorage.setItem('cartData',JSON.stringify(cartData));
+      alert("Your Product has been added")
    }

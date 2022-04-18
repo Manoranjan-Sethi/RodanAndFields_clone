@@ -1,3 +1,10 @@
+.main {
+    font-family: ProximaNovaRegular, Arial, Sans-Serif;
+    width: 75%;
+    margin: auto;
+    margin-top: 5px;
+  }
+
 .navbar-outer{
     display: flex;
 
