@@ -42,19 +42,19 @@ Clone the project
 
 ## Screenshots
 
-![](Landing%20Page.png)
+![Landing Page](https://user-images.githubusercontent.com/84295391/193425173-5c291629-78e4-4678-abcc-eada0e935245.png)
 
-![](Items.png)
+![Items](https://user-images.githubusercontent.com/84295391/193425183-0b1afc42-dc94-47e4-9afe-d84f84fe3c4d.png)
 
-![](flex.png)
+![flex](https://user-images.githubusercontent.com/84295391/193425188-b9245856-5486-45cf-8996-ca23d2e774b5.png)
 
-![](SignUp.png)
+![SignUp](https://user-images.githubusercontent.com/84295391/193425191-ccde3a4a-5676-4c05-aa00-d90c28dd65e6.png)
 
-![](Products.png)
+![Products](https://user-images.githubusercontent.com/84295391/193425196-9736b3ef-c552-4470-bc37-d5291381916d.png)
 
-![](addToCart.png)
+![addToCart](https://user-images.githubusercontent.com/84295391/193425197-16629a98-2dab-459b-b4a9-70c1595ec72b.png)
 
-![](Payment.png)
+![Payment](https://user-images.githubusercontent.com/84295391/193425199-2a99d209-d5ea-45de-8829-900d7670a7d4.png)
 
 ## Challenges
 
